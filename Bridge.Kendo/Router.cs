@@ -18,6 +18,7 @@ namespace Bridge.Kendo
     }
 
     [External]
+    [Name("kendo.Router")]
     public class Router
     {
         /// <summary>
