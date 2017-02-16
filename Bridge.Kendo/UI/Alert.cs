@@ -14,9 +14,12 @@ namespace Bridge.Kendo.UI
         public string OkText { get; set; }
     }
 
+    [External]
+    public class Alert : Dialog { }
+
     [External]    
-    public static class Alert 
+    public static class jQueryExtensions 
     {
-        public static jQuery KendoAlert(this jQuery jQuery, AlertOptions options = null) { return default(jQuery); }        
+        public static Alert KendoAlert(this jQuery jQuery, AlertOptions options = null) { return null; }        
     }
 }
