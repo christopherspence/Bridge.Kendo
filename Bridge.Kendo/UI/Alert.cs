@@ -15,11 +15,30 @@ namespace Bridge.Kendo.UI
     }
 
     [External]
-    public class Alert : Dialog { }
+    public class Alert : Dialog
+    {
+        public virtual void Open() { }
+    }
 
     [External]    
     public static class jQueryExtensions 
     {
-        public static Alert KendoAlert(this jQuery jQuery, AlertOptions options = null) { return null; }        
+        /// <summary>
+        /// Create a kendo alert
+        /// </summary>
+        /// <param name="jQuery"></param>
+        /// <param name="options"></param>
+        /// <returns></returns>
+        [Name("kendoAlert")]
+        public static extern Alert CreateAlert(this jQuery jQuery, AlertOptions options = null);
+
+        /// <summary>
+        /// Get Kendo alert from jQuery element
+        /// </summary>
+        /// <typeparam name="Button"></typeparam>
+        /// <param name="jQuery"></param>
+        /// <returns></returns>
+        [Template("{this}.data(\"kendoAlert\")")]
+        public static extern Alert GetAlert(this jQuery jQuery);
     }
 }

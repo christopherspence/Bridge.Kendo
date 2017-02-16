@@ -52,6 +52,22 @@ namespace Bridge.Kendo.UI
     [External]
     public static class ButtonExtensions
     {
-        public static Button KendoButton(this jQuery jQuery) { return null; }
+        /// <summary>
+        /// Create an instance of a Kendo Button
+        /// </summary>
+        /// <typeparam name="Button"></typeparam>
+        /// <param name="jQuery"></param>
+        /// <returns></returns>
+        [Name("kendoButton")]
+        public static jQuery CreateButton(this jQuery jQuery) { return null; }
+
+        /// <summary>
+        /// Get Kendo button from jQuery element
+        /// </summary>
+        /// <typeparam name="Button"></typeparam>
+        /// <param name="jQuery"></param>
+        /// <returns></returns>
+        [Template("{this}.data(\"kendoButton\")")]
+        public static extern Button GetButton(this jQuery jQuery);
     }
 }
