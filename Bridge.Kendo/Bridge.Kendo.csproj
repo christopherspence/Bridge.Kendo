@@ -49,12 +49,16 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class.cs" />
     <Compile Include="Data\ObservableArray.cs" />
     <Compile Include="Data\ObservableObject.cs" />
     <Compile Include="Kendo.cs" />
+    <Compile Include="Observable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Alert.cs" />
     <Compile Include="UI\Button.cs" />
+    <Compile Include="UI\Dialog.cs" />
+    <Compile Include="UI\Widget.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
