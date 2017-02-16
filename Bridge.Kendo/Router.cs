@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Bridge.Kendo
 {
     [External]
+    [ObjectLiteral]
     public class RouterOptions
     {
         /// <summary>
