@@ -21,7 +21,7 @@ namespace Bridge.Kendo.UI
     }
 
     [External]    
-    public static class jQueryExtensions 
+    public static partial class jQueryExtensions 
     {
         /// <summary>
         /// Create a kendo alert

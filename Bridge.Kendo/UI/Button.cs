@@ -50,7 +50,7 @@ namespace Bridge.Kendo.UI
     }
 
     [External]
-    public static class ButtonExtensions
+    public static partial class jQueryExtensions
     {
         /// <summary>
         /// Create an instance of a Kendo Button
