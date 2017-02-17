@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class.cs" />
+    <Compile Include="Color.cs" />
     <Compile Include="Data\ObservableArray.cs" />
     <Compile Include="Data\ObservableObject.cs" />
     <Compile Include="Kendo.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Router.cs" />
     <Compile Include="UI\Alert.cs" />
+    <Compile Include="UI\ColorPicker.cs" />
     <Compile Include="UI\Confirm.cs" />
     <Compile Include="UI\Button.cs" />
     <Compile Include="UI\Dialog.cs" />
