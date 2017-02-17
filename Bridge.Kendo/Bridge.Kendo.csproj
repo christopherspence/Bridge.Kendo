@@ -61,6 +61,7 @@
     <Compile Include="UI\Confirm.cs" />
     <Compile Include="UI\Button.cs" />
     <Compile Include="UI\Dialog.cs" />
+    <Compile Include="UI\MaskedTextBox.cs" />
     <Compile Include="UI\Notification.cs" />
     <Compile Include="UI\Widget.cs" />
     <Compile Include="View.cs" />
