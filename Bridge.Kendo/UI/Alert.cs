@@ -9,7 +9,7 @@ namespace Bridge.Kendo.UI
 {
     [External]
     [ObjectLiteral]
-    public class AlertOptions
+    public class AlertConfiguration
     {
         public string OkText { get; set; }
     }
@@ -30,7 +30,7 @@ namespace Bridge.Kendo.UI
         /// <param name="options"></param>
         /// <returns></returns>
         [Name("kendoAlert")]
-        public static extern Alert CreateAlert(this jQuery jQuery, AlertOptions options = null);
+        public static extern Alert CreateAlert(this jQuery jQuery, AlertConfiguration config);
 
         /// <summary>
         /// Get Kendo alert from jQuery element

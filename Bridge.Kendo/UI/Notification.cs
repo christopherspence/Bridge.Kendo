@@ -57,7 +57,7 @@ namespace Bridge.Kendo.UI
 
     [External]
     [ObjectLiteral]
-    public class NotificationOptions
+    public class NotificationConfiguration
     {
         /// <summary>
         /// Indicates the period in milliseconds after which a notification can be dismissed (hidden) by the user. Default is 0.
@@ -313,7 +313,7 @@ namespace Bridge.Kendo.UI
         /// <param name="options">The options for the dialog</param>
         /// <returns></returns>
         [Name("kendoNotification")]
-        public extern static jQuery CreateNotification(this jQuery jQuery, NotificationOptions options);
+        public extern static jQuery CreateNotification(this jQuery jQuery, NotificationConfiguration config);
 
         /// <summary>
         /// Get Kendo Notification from jQuery element

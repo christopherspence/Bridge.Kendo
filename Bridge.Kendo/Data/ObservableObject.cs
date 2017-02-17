@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Bridge.Kendo.Data
 {
     [External]
+    [Name("kendo.ObservableObject")]
     public class ObservableObject
     {
     }

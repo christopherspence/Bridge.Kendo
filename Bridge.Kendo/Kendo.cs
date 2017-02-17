@@ -9,9 +9,8 @@ using System.Threading.Tasks;
 
 namespace Bridge.Kendo
 {
-    [External]
-    [Namespace(false)]
-    public class Kendo
+    [External]    
+    public static class Kendo
     {
         /// <summary>
         /// Opens a Kendo UI Alert popup. Similar to the native window.alert() method.
@@ -141,5 +140,7 @@ namespace Bridge.Kendo
         /// </summary>
         /// <param name="element"></param>
         public static void Destroy(HTMLElement element) { }
+
+
     }
 }

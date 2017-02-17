@@ -11,6 +11,7 @@ namespace Bridge.Kendo
     /// Provides support for firing events.
     /// </summary>
     [External]
+    [Name("kendo.Observable")]
     public class Observable : Class
     {
         /// <summary>

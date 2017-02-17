@@ -15,7 +15,7 @@ namespace Bridge.Kendo
     {
         public Layout(string html) : base(html) {}
 
-        public Layout(string html, ViewOptions options) : base(html, options) {}
+        public Layout(string html, ViewConfiguaration config) : base(html, config) {}
 
         /// <summary>
         /// Renders the View element in the element specified by the selector.

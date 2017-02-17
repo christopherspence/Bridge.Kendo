@@ -10,7 +10,7 @@ namespace Bridge.Kendo
 {
     [External]
     [ObjectLiteral]
-    public class ViewOptions
+    public class ViewConfiguaration
     {
         /// <summary>
         /// If set to true, the view template will be treated as kendo template and evaluated against the provided model instance. Default is false.
@@ -49,7 +49,7 @@ namespace Bridge.Kendo
 
         public View(string html) { }
 
-        public View(string html, ViewOptions options) { }
+        public View(string html, ViewConfiguaration config) { }
 
         /// <summary>
         /// Removes the View element from the DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.

@@ -26,7 +26,7 @@ namespace Bridge.Kendo.UI
 
     [External]
     [ObjectLiteral]
-    public class ConfirmOptions
+    public class ConfirmConfiguration
     {
         [FieldProperty]
         public string Content { get; set; }
@@ -62,7 +62,7 @@ namespace Bridge.Kendo.UI
         /// <param name="options">The options for the dialog</param>
         /// <returns></returns>
         [Name("kendoConfirm")]
-        public extern static jQuery CreateConfirm(this jQuery jQuery, ConfirmOptions options);
+        public extern static jQuery CreateConfirm(this jQuery jQuery, ConfirmConfiguration config);
 
         /// <summary>
         /// Get Kendo Confirm from jQuery element

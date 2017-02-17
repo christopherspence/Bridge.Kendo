@@ -10,7 +10,7 @@ namespace Bridge.Kendo.UI
 {
     [External]
     [ObjectLiteral]
-    public class ButtonOptions
+    public class ButtonConfiguration
     {
         /// <summary>
         /// Indicates whether the Button should be enabled or disabled. By default, it is enabled, unless a disabled="disabled" attribute is detected.
@@ -59,7 +59,7 @@ namespace Bridge.Kendo.UI
         /// <param name="jQuery"></param>
         /// <returns></returns>
         [Name("kendoButton")]
-        public static jQuery CreateButton(this jQuery jQuery) { return null; }
+        public static jQuery CreateButton(this jQuery jQuery, ButtonConfiguration config) { return null; }
 
         /// <summary>
         /// Get Kendo button from jQuery element

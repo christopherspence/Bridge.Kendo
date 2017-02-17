@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Bridge.Kendo.Data
 {
     [External]
-    [Namespace(false)]
+    [Name("kendo.ObservableArray")]
     public class ObservableArray
     {
     }

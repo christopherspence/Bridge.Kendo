@@ -8,7 +8,7 @@ namespace Bridge.Kendo
 {
     [External]
     [ObjectLiteral]
-    public class RouterOptions
+    public class RouterConfiguration
     {
         /// <summary>
         /// Triggered when the URL does not match any of the provided routes.
@@ -22,6 +22,8 @@ namespace Bridge.Kendo
     [Name("kendo.Router")]
     public class Router
     {
+        public Router(RouterConfiguration config) { }
+
         /// <summary>
         /// Introduced with Q3 2014. If set to false, the router instance will perform case sensitive match of the url against the defined routes.
         /// </summary>
