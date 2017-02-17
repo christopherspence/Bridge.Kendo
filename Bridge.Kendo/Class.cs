@@ -10,6 +10,7 @@ namespace Bridge.Kendo
     /// The base class of most Kendo objects. Provides simple inheritance support.
     /// </summary>
     [External]
+    [Name("kendo.Class")]
     public class Class
     {
         /// <summary>
